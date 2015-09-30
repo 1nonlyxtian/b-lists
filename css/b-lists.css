@@ -1,5 +1,5 @@
 /*
-	B-Lists (http://github.com/1nonlyxtian/b-lists)
+	B-Lists (https://github.com/1nonlyxtian/b-lists)
 	Copyright 2015 Christian Dasalla
 	
 	This project is licensed under the 
@@ -49,10 +49,7 @@ section.b-lists p {font-size:20px; font-weight:300}
 td.black {border-left: 2px solid #000 !important;}
 td.white {border-left: 2px solid #fff !important;}
 td.blue {border-left: 2px solid #2196F3 !important;}
-td.blue-grey {border-left: 2px solid #607d8b !important;}
-td.cyan {border-left: 2px solid #0097a7 !important;}
-td.deep-orange {border-left: 2px solid #ff5722 !important;}
-td.deep-purple {border-left: 2px solid #673ab7 !important;}
+td.dark-purple {border-left: 2px solid #673ab7 !important;}
 td.grey {border-left: 2px solid #616161 !important;}
 td.indigo {border-left: 2px solid #1a237e !important;}
 td.orange {border-left: 2px solid #ff9800 !important;}
@@ -63,6 +60,4 @@ td.yellow {border-left: 2px solid #ffeb3b !important;}
 td.light-blue {border-left: 2px solid #03a9f4 !important;}
 td.green {border-left: 2px solid #4CAF50 !important;}
 td.light-green {border-left: 2px solid #8bc34a !important;}
-td.amber {border-left: 2px solid #ffc107 !important;}
 td.brown {border-left: 2px solid #795548 !important;}
-td.light-blue {border-left: 2px solid #03a9f4 !important;}
