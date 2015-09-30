@@ -14,7 +14,7 @@ B-Lists is a stylesheet that is designed to make beautiful lists easier. B-Lists
 
 ## How to Use?
 
-* Download the .zip file of the repository
+* [Download](https://github.com/1nonlyxtian/b-lists/archive/master.zip) a copy of B-Lists
 * Link the `b-lists.css` file to your HTML file
 
 Now, let's start *b-listing*!
