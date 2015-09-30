@@ -11,7 +11,7 @@ B-Lists is a stylesheet that is designed to make beautiful lists easier. B-Lists
 * 3 different list item sizes
 * added custom column grid support
 * combined with **Roboto**
-* lightweight (< 5kb)
+* lightweight (< 5 kb)
 
 ## How to Use?
 
