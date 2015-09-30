@@ -28,6 +28,8 @@ Now, let's start *b-listing*!
 
 There you have it. You now have a list that is more beautiful and more elegant. :)
 
+NOTE: I have added a `test.html` file that you can use as a reference. If you have questions on the usage of B-Lists, you can email me at cfdasalla@outlook.com or message me on Twitter: [@1nOnlyXtian](http://twitter.com/1nonlyxtian).
+
 ## License
 
 This project is licensed under the [MIT License](../blob/master/LICENSE).
