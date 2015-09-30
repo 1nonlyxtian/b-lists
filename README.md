@@ -1,5 +1,4 @@
 # B-Lists
-A new way to make lists
 ![b-lists](https://cloud.githubusercontent.com/assets/11498348/10193963/a77e2198-67b8-11e5-88bd-ce5051f97078.png)
 
 ## What is B-Lists?
@@ -7,11 +6,28 @@ A new way to make lists
 B-Lists is a stylesheet that is designed to make beautiful lists easier. B-Lists is both easy-to-learn and easy-to-use.
 
 ## Features
-* 20 color schemes to choose from
+* 15 color schemes to choose from
 * 3 different list item sizes
 * added custom column grid support
 * combined with **Roboto**
 * lightweight (< 5 kb)
+
+### Color Schemes
+* Black
+* White
+* Blue
+* Dark-Purple
+* Grey
+* Indigo
+* Orange
+* Purple
+* Red
+* Teal
+* Yellow
+* Light-Blue
+* Green
+* Light-Green
+* Brown
 
 ## How to Use?
 
