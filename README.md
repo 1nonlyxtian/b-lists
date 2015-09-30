@@ -23,7 +23,7 @@ Now, let's start *b-listing*!
 4. Create a `<section>` with a class `b-lists`. This will be the framework for your list. You can integrate headings as titles for your lists.
 5. Now, create a `<table>`.
 6. To do the list items, create a `<tr>`.  The numbers of rows will be the same as the number of list items. Then, inside the `<tr>`, create a `<td>` with the classes of either `item-sm`, `item-md`, or `item-lg`, and your desired color scheme. The color you picked is the color of the line on the left of the list item.
-7. Repeat Step 6 until necessary.
+7. Repeat Step 4 until necessary.
 8. Close all tags. (Just a reminder)
 
 There you have it. You now have a list that is more beautiful and more elegant. :)
