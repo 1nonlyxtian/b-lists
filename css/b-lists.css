@@ -1,0 +1,68 @@
+/*
+	B-Lists (http://github.com/1nonlyxtian/b-lists)
+	(c) 2015 Christian Dasalla.
+	
+	This project is licensed under the 
+	MIT License (https://github.com/1nonlyxtian/b-lists/blob/master/LICENSE).
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+section.b-lists {padding:10px !important; font-family: 'Roboto' !important;}
+section.b-lists + section.b-lists{border-top: 1px solid #eee !important;}
+section.b-lists h1 {font-size:36px;}
+section.b-lists h2 {font-size:30px;}
+section.b-lists h3 {font-size:24px;}
+section.b-lists h4 {font-size:20px;}
+section.b-lists h5 {font-size:18px;}
+section.b-lists h6 {font-size:16px;}
+section.b-lists tr {margin-top: 3px !important;}
+section.b-lists p {font-size:20px; font-weight:300}
+
+/* List Item Sizes */
+.item-lg {padding:12px 10px 12px 25px !important; font-size:24px !important;}
+.item-lg p {font-size: 24px !important;}
+.item-md {padding: 8px 7px 8px 20px !important;}
+.item-md p {font-size:20px !important;}
+.item-sm {padding: 4px  3px 4px 15px !important;}
+.item-sm p {font-size:16px !important;}
+
+/* Column Grid */
+.row {padding:1px 16px;}
+.fifth, .quarter, .third, .half {width:100%}
+.fifth, .quarter, .third, .half {
+	float:left;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	width:100%;
+}
+
+@media only screen and (min-width:601px) {
+	.fifth {width: 20%}
+	.quarter {width: 25%}
+	.third {width:33.33%}
+	.half {width:50%}
+}
+
+/* Colors */
+td.black {border-left: 2px solid #000 !important;}
+td.white {border-left: 2px solid #fff !important;}
+td.blue {border-left: 2px solid #2196F3 !important;}
+td.blue-grey {border-left: 2px solid #607d8b !important;}
+td.cyan {border-left: 2px solid #0097a7 !important;}
+td.deep-orange {border-left: 2px solid #ff5722 !important;}
+td.deep-purple {border-left: 2px solid #673ab7 !important;}
+td.grey {border-left: 2px solid #616161 !important;}
+td.indigo {border-left: 2px solid #1a237e !important;}
+td.orange {border-left: 2px solid #ff9800 !important;}
+td.purple {border-left: 2px solid #9c27b0 !important;}
+td.red {border-left: 2px solid #F44336 !important;}
+td.teal {border-left: 2px solid #009688 !important;}
+td.yellow {border-left: 2px solid #ffeb3b !important;}
+td.light-blue {border-left: 2px solid #03a9f4 !important;}
+td.green {border-left: 2px solid #4CAF50 !important;}
+td.light-green {border-left: 2px solid #8bc34a !important;}
+td.amber {border-left: 2px solid #ffc107 !important;}
+td.brown {border-left: 2px solid #795548 !important;}
+td.light-blue {border-left: 2px solid #03a9f4 !important;}
