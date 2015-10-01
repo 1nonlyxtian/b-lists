@@ -1,5 +1,5 @@
 /*
-	B-Lists v.1.0.0 (https://github.com/1nonlyxtian/b-lists)
+	B-Lists v.1.1.0 (https://github.com/1nonlyxtian/b-lists)
 	Copyright 2015 Christian Dasalla
 	
 	This project is licensed under the 
@@ -46,18 +46,67 @@ section.b-lists p {font-size:20px; font-weight:300}
 }
 
 /* Colors */
-td.black {border-left: 2px solid #000 !important;}
-td.white {border-left: 2px solid #fff !important;}
-td.blue {border-left: 2px solid #2196F3 !important;}
-td.dark-purple {border-left: 2px solid #673ab7 !important;}
-td.grey {border-left: 2px solid #616161 !important;}
-td.indigo {border-left: 2px solid #1a237e !important;}
-td.orange {border-left: 2px solid #ff9800 !important;}
-td.purple {border-left: 2px solid #9c27b0 !important;}
-td.red {border-left: 2px solid #F44336 !important;}
-td.teal {border-left: 2px solid #009688 !important;}
-td.yellow {border-left: 2px solid #ffeb3b !important;}
-td.light-blue {border-left: 2px solid #03a9f4 !important;}
-td.green {border-left: 2px solid #4CAF50 !important;}
-td.light-green {border-left: 2px solid #8bc34a !important;}
-td.brown {border-left: 2px solid #795548 !important;}
+td.black {border-left: 2px solid #000 !important; transition: box-shadow 0.25s ease-in-out;}
+td.white {border-left: 2px solid #fff !important; transition: box-shadow 0.25s ease-in-out;}
+td.blue {border-left: 2px solid #2196F3 !important; transition: box-shadow 0.25s ease-in-out;}
+td.dark-purple {border-left: 2px solid #673ab7 !important; transition: box-shadow 0.25s ease-in-out;}
+td.grey {border-left: 2px solid #616161 !important; transition: box-shadow 0.25s ease-in-out;}
+td.indigo {border-left: 2px solid #1a237e !important; transition: box-shadow 0.25s ease-in-out;}
+td.orange {border-left: 2px solid #ff9800 !important; transition: box-shadow 0.25s ease-in-out;}
+td.purple {border-left: 2px solid #9c27b0 !important; transition: box-shadow 0.25s ease-in-out;}
+td.red {border-left: 2px solid #F44336 !important; transition: box-shadow 0.25s ease-in-out;}
+td.teal {border-left: 2px solid #009688 !important; transition: box-shadow 0.25s ease-in-out;}
+td.yellow {border-left: 2px solid #ffeb3b !important; transition: box-shadow 0.25s ease-in-out;}
+td.light-blue {border-left: 2px solid #03a9f4 !important; transition: box-shadow 0.25s ease-in-out;}
+td.green {border-left: 2px solid #4CAF50 !important; transition: box-shadow 0.25s ease-in-out;}
+td.light-green {border-left: 2px solid #8bc34a !important; transition: box-shadow 0.25s ease-in-out;}
+td.brown {border-left: 2px solid #795548 !important; transition: box-shadow 0.25s ease-in-out;}
+
+/* Color Hover Effects */
+td.item-lg.black:hover {box-shadow: inset 5px 0 0 #000 !important;}
+td.item-lg.white:hover {box-shadow: inset 5px 0 0 #fff !important;}
+td.item-lg.blue:hover {box-shadow: inset 5px 0 0 #2196F3 !important;}
+td.item-lg.dark-purple:hover {box-shadow: inset 5px 0 0 #673ab7 !important;}
+td.item-lg.grey:hover {box-shadow: inset 5px 0 0 #616161 !important;}
+td.item-lg.indigo:hover {box-shadow: inset 5px 0 0 #1a237e !important;}
+td.item-lg.orange:hover {box-shadow: inset 5px 0 0 #ff9800 !important;}
+td.item-lg.purple:hover {box-shadow: inset 5px 0 0 #9c27b0 !important;}
+td.item-lg.red:hover {box-shadow: inset 5px 0 0 #F44336 !important;}
+td.item-lg.teal:hover {box-shadow: inset 5px 0 0 #009688 !important;}
+td.item-lg.yellow:hover {box-shadow: inset 5px 0 0 #ffeb3b !important;}
+td.item-lg.light-blue:hover {box-shadow: inset 5px 0 0 #03a9f4 !important;}
+td.item-lg.green:hover {box-shadow: inset 5px 0 0 #4CAF50 !important;}
+td.item-lg.light-green:hover {box-shadow: inset 5px 0 0 #8bc34a !important;}
+td.item-lg.brown:hover {box-shadow: inset 5px 0 0 #795548 !important;}
+
+td.item-md.black:hover {box-shadow: inset 4px 0 0 #000 !important;}
+td.item-md.white:hover {box-shadow: inset 4px 0 0 #fff !important;}
+td.item-md.blue:hover {box-shadow: inset 4px 0 0 #2196F3 !important;}
+td.item-md.dark-purple:hover {box-shadow: inset 4px 0 0 #673ab7 !important;}
+td.item-md.grey:hover {box-shadow: inset 4px 0 0 #616161 !important;}
+td.item-md.indigo:hover {box-shadow: inset 4px 0 0 #1a237e !important;}
+td.item-md.orange:hover {box-shadow: inset 4px 0 0 #ff9800 !important;}
+td.item-md.purple:hover {box-shadow: inset 4px 0 0 #9c27b0 !important;}
+td.item-md.red:hover {box-shadow: inset 4px 0 0 #F44336 !important;}
+td.item-md.teal:hover {box-shadow: inset 4px 0 0 #009688 !important;}
+td.item-md.yellow:hover {box-shadow: inset 4px 0 0 #ffeb3b !important;}
+td.item-md.light-blue:hover {box-shadow: inset 4px 0 0 #03a9f4 !important;}
+td.item-md.green:hover {box-shadow: inset 4px 0 0 #4CAF50 !important;}
+td.item-md.light-green:hover {box-shadow: inset 4px 0 0 #8bc34a !important;}
+td.item-md.brown:hover {box-shadow: inset 4px 0 0 #795548 !important;}
+
+td.item-sm.black:hover {box-shadow: inset 3px 0 0 #000 !important;}
+td.item-sm.white:hover {box-shadow: inset 3px 0 0 #fff !important;}
+td.item-sm.blue:hover {box-shadow: inset 3px 0 0 #2196F3 !important;}
+td.item-sm.dark-purple:hover {box-shadow: inset 3px 0 0 #673ab7 !important;}
+td.item-sm.grey:hover {box-shadow: inset 3px 0 0 #616161 !important;}
+td.item-sm.indigo:hover {box-shadow: inset 3px 0 0 #1a237e !important;}
+td.item-sm.orange:hover {box-shadow: inset 3px 0 0 #ff9800 !important;}
+td.item-sm.purple:hover {box-shadow: inset 3px 0 0 #9c27b0 !important;}
+td.item-sm.red:hover {box-shadow: inset 3px 0 0 #F44336 !important;}
+td.item-sm.teal:hover {box-shadow: inset 3px 0 0 #009688 !important;}
+td.item-sm.yellow:hover {box-shadow: inset 3px 0 0 #ffeb3b !important;}
+td.item-sm.light-blue:hover {box-shadow: inset 3px 0 0 #03a9f4 !important;}
+td.item-sm.green:hover {box-shadow: inset 3px 0 0 #4CAF50 !important;}
+td.item-sm.light-green:hover {box-shadow: inset 3px 0 0 #8bc34a !important;}
+td.item-sm.brown:hover {box-shadow: inset 3px 0 0 #795548 !important;}
