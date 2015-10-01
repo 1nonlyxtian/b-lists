@@ -6,6 +6,7 @@
 B-Lists is a stylesheet that is designed to make beautiful lists easier. B-Lists is both easy-to-learn and easy-to-use.
 
 ## Features
+* NEW: now with hover effects 
 * 15 color schemes to choose from
 * 3 different list item sizes
 * added custom column grid support
