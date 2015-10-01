@@ -6,7 +6,7 @@
 B-Lists is a stylesheet that is designed to make beautiful lists easier. B-Lists is both easy-to-learn and easy-to-use.
 
 ## Features
-* NEW: now with hover effects 
+* NEW: now with hover effects on the left border
 * 15 color schemes to choose from
 * 3 different list item sizes
 * added custom column grid support
@@ -46,7 +46,7 @@ Now, let's start *b-listing*!
 
 There you have it. You now have a list that is more beautiful and more elegant. :)
 
-NOTE: I have added a `test.html` file that you can use as a reference. If you have questions on the usage of B-Lists, you can email me at cfdasalla@outlook.com or message me on Twitter: [@1nOnlyXtian](http://twitter.com/1nonlyxtian).
+NOTE: You can access a demo file of B-Lists [here](http://rawgit.com/1nonlyxtian/b-lists/master/test.html). If you have questions on the usage of B-Lists, you can email me at cfdasalla@outlook.com or message me on Twitter: [@1nOnlyXtian](http://twitter.com/1nonlyxtian).
 
 ## License
 
