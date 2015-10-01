@@ -1,5 +1,5 @@
 /*
-	B-Lists (https://github.com/1nonlyxtian/b-lists)
+	B-Lists v.1.0 (https://github.com/1nonlyxtian/b-lists)
 	Copyright 2015 Christian Dasalla
 	
 	This project is licensed under the 
@@ -9,14 +9,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 section.b-lists {padding:10px !important; font-family: 'Roboto' !important;}
-section.b-lists + section.b-lists{border-top: 1px solid #eee !important;}
+section.b-lists + section.b-lists {border-top: 1px solid #eee !important;}
 section.b-lists h1 {font-size:36px;}
 section.b-lists h2 {font-size:30px;}
 section.b-lists h3 {font-size:24px;}
 section.b-lists h4 {font-size:20px;}
 section.b-lists h5 {font-size:18px;}
 section.b-lists h6 {font-size:16px;}
-section.b-lists tr {margin-top: 3px !important;}
+section.b-lists tr {margin-top:4px !important;}
 section.b-lists p {font-size:20px; font-weight:300}
 
 /* List Item Sizes */
