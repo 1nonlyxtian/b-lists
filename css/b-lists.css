@@ -1,5 +1,5 @@
 /*
-	B-Lists v1.1.0 (https://github.com/1nonlyxtian/b-lists)
+	B-Lists v1.1.1 (https://github.com/1nonlyxtian/b-lists)
 	Copyright 2015 Christian Dasalla
 	
 	This project is licensed under the 
@@ -8,105 +8,112 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-section.b-lists {padding:10px !important; font-family: 'Roboto' !important;}
-section.b-lists + section.b-lists {border-top: 1px solid #eee !important;}
-section.b-lists h1 {font-size:36px;}
-section.b-lists h2 {font-size:30px;}
-section.b-lists h3 {font-size:24px;}
-section.b-lists h4 {font-size:20px;}
-section.b-lists h5 {font-size:18px;}
-section.b-lists h6 {font-size:16px;}
-section.b-lists tr {margin-top:4px !important;}
-section.b-lists p {font-size:20px; font-weight:300}
+section.b-lists {padding: 12px !important; font-family: 'Roboto' !important;}
+section.b-lists > h1 {font-size: 36px !important; line-height: 0.7 !important;}
+section.b-lists > h2 {font-size: 30px !important; line-height: 0.7 !important;}
+section.b-lists > h3 {font-size: 24px !important; line-height: 0.7 !important;}
+section.b-lists > h4 {font-size: 20px !important; line-height: 0.7 !important;}
+section.b-lists > h5 {font-size: 18px !important; line-height: 0.7 !important;}
+section.b-lists > h6 {font-size: 16px !important; line-height: 0.7 !important;}
+section.b-lists > p {font-size: 14px !important; font-weight: 300 !important;}
+
+@media only screen and (min-width:601px){
+	section.b-lists + section.b-lists {border-top: 1px solid #eee !important;}
+}
+
+@media only screen and (max-width:600px) {
+	section.b-lists {border-bottom: 1px solid #eee !important;}
+}
 
 /* List Item Sizes */
-.item-lg {padding:12px 10px 12px 25px !important; font-size:24px !important;}
+.item-lg {padding: 12px 200px 12px 25px !important;}
 .item-lg p {font-size: 24px !important;}
-.item-md {padding: 8px 7px 8px 20px !important;}
-.item-md p {font-size:20px !important;}
-.item-sm {padding: 4px  3px 4px 15px !important;}
-.item-sm p {font-size:16px !important;}
+.item-md {padding: 8px 200px 8px 20px !important;}
+.item-md p {font-size: 20px !important;}
+.item-sm {padding: 4px 200px 4px 15px !important;}
+.item-sm p {font-size: 16px !important;}
 
-/* Column Grid */
-.row {padding:1px 16px;}
-.fifth, .quarter, .third, .half {width:100%}
+/* Basic Column Grid */
+.row {padding: 1px 5px !important;}
+.fifth, .quarter, .third, .half {width: 100% !important;}
 .fifth, .quarter, .third, .half {
-	float:left;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	width:100%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 @media only screen and (min-width:601px) {
-	.fifth {width: 20%}
-	.quarter {width: 25%}
-	.third {width:33.33%}
-	.half {width:50%}
+	.row {padding: 1px 16px !important;}
+	.fifth {width: 20% !important;}
+	.quarter {width: 25% !important;}
+	.third {width: 33.33% !important;}
+	.half {width: 50% !important;}
 }
 
 /* Colors */
-td.black {box-shadow: inset 2px 0 0 #000 !important; transition: box-shadow 0.25s ease-in-out;}
-td.white {box-shadow: inset 2px 0 0 #fff !important; transition: box-shadow 0.25s ease-in-out;}
-td.blue {box-shadow: inset 2px 0 0 #2196F3 !important; transition: box-shadow 0.25s ease-in-out;}
-td.dark-purple {box-shadow: inset 2px 0 0 #673ab7 !important; transition: box-shadow 0.25s ease-in-out;}
-td.grey {box-shadow: inset 2px 0 0 #616161 !important; transition: box-shadow 0.25s ease-in-out;}
-td.indigo {box-shadow: inset 2px 0 0 #1a237e !important; transition: box-shadow 0.25s ease-in-out;}
-td.orange {box-shadow: inset 2px 0 0 #ff9800 !important; transition: box-shadow 0.25s ease-in-out;}
-td.purple {box-shadow: inset 2px 0 0 #9c27b0 !important; transition: box-shadow 0.25s ease-in-out;}
-td.red {box-shadow: inset 2px 0 0 #F44336 !important; transition: box-shadow 0.25s ease-in-out;}
-td.teal {box-shadow: inset 2px 0 0 #009688 !important; transition: box-shadow 0.25s ease-in-out;}
-td.yellow {box-shadow: inset 2px 0 0 #ffeb3b !important; transition: box-shadow 0.25s ease-in-out;}
-td.light-blue {box-shadow: inset 2px 0 0 #03a9f4 !important; transition: box-shadow 0.25s ease-in-out;}
-td.green {box-shadow: inset 2px 0 0 #4CAF50 !important; transition: box-shadow 0.25s ease-in-out;}
-td.light-green {box-shadow: inset 2px 0 0 #8bc34a !important; transition: box-shadow 0.25s ease-in-out;}
-td.brown {box-shadow: inset 2px 0 0 #795548 !important; transition: box-shadow 0.25s ease-in-out;}
+td.black {box-shadow: inset 2px 0 0  #000 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.white {box-shadow: inset 2px 0 0  #fff !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.blue {box-shadow: inset 2px 0 0  #2196F3 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.dark-purple {box-shadow: inset 2px 0 0  #673ab7 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.grey {box-shadow: inset 2px 0 0  #616161 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.indigo {box-shadow: inset 2px 0 0  #1a237e !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.orange {box-shadow: inset 2px 0 0  #ff9800 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.purple {box-shadow: inset 2px 0 0  #9c27b0 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.red {box-shadow: inset 2px 0 0  #F44336 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.teal {box-shadow: inset 2px 0 0  #009688 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.yellow {box-shadow: inset 2px 0 0  #ffeb3b !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.light-blue {box-shadow: inset 2px 0 0  #03a9f4 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.green {box-shadow: inset 2px 0 0  #4CAF50 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.light-green {box-shadow: inset 2px 0 0  #8bc34a !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.brown {box-shadow: inset 2px 0 0  #795548 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
 
 /* Color Hover Effects */
-td.item-lg.black:hover {box-shadow: inset 5px 0 0 #000 !important;}
-td.item-lg.white:hover {box-shadow: inset 5px 0 0 #fff !important;}
-td.item-lg.blue:hover {box-shadow: inset 5px 0 0 #2196F3 !important;}
-td.item-lg.dark-purple:hover {box-shadow: inset 5px 0 0 #673ab7 !important;}
-td.item-lg.grey:hover {box-shadow: inset 5px 0 0 #616161 !important;}
-td.item-lg.indigo:hover {box-shadow: inset 5px 0 0 #1a237e !important;}
-td.item-lg.orange:hover {box-shadow: inset 5px 0 0 #ff9800 !important;}
-td.item-lg.purple:hover {box-shadow: inset 5px 0 0 #9c27b0 !important;}
-td.item-lg.red:hover {box-shadow: inset 5px 0 0 #F44336 !important;}
-td.item-lg.teal:hover {box-shadow: inset 5px 0 0 #009688 !important;}
-td.item-lg.yellow:hover {box-shadow: inset 5px 0 0 #ffeb3b !important;}
-td.item-lg.light-blue:hover {box-shadow: inset 5px 0 0 #03a9f4 !important;}
-td.item-lg.green:hover {box-shadow: inset 5px 0 0 #4CAF50 !important;}
-td.item-lg.light-green:hover {box-shadow: inset 5px 0 0 #8bc34a !important;}
-td.item-lg.brown:hover {box-shadow: inset 5px 0 0 #795548 !important;}
+td.item-lg.black:hover {box-shadow: inset 7px 0 0 #000 !important;}
+td.item-lg.white:hover {box-shadow: inset 7px 0 0 #fff !important;}
+td.item-lg.blue:hover {box-shadow: inset 7px 0 0 #2196F3 !important;}
+td.item-lg.dark-purple:hover {box-shadow: inset 7px 0 0 #673ab7 !important;}
+td.item-lg.grey:hover {box-shadow: inset 7px 0 0 #616161 !important;}
+td.item-lg.indigo:hover {box-shadow: inset 7px 0 0 #1a237e !important;}
+td.item-lg.orange:hover {box-shadow: inset 7px 0 0 #ff9800 !important;}
+td.item-lg.purple:hover {box-shadow: inset 7px 0 0 #9c27b0 !important;}
+td.item-lg.red:hover {box-shadow: inset 7px 0 0 #F44336 !important;}
+td.item-lg.teal:hover {box-shadow: inset 7px 0 0 #009688 !important;}
+td.item-lg.yellow:hover {box-shadow: inset 7px 0 0 #ffeb3b !important;}
+td.item-lg.light-blue:hover {box-shadow: inset 7px 0 0 #03a9f4 !important;}
+td.item-lg.green:hover {box-shadow: inset 7px 0 0 #4CAF50 !important;}
+td.item-lg.light-green:hover {box-shadow: inset 7px 0 0 #8bc34a !important;}
+td.item-lg.brown:hover {box-shadow: inset 7px 0 0 #795548 !important;}
 
-td.item-md.black:hover {box-shadow: inset 4px 0 0 #000 !important;}
-td.item-md.white:hover {box-shadow: inset 4px 0 0 #fff !important;}
-td.item-md.blue:hover {box-shadow: inset 4px 0 0 #2196F3 !important;}
-td.item-md.dark-purple:hover {box-shadow: inset 4px 0 0 #673ab7 !important;}
-td.item-md.grey:hover {box-shadow: inset 4px 0 0 #616161 !important;}
-td.item-md.indigo:hover {box-shadow: inset 4px 0 0 #1a237e !important;}
-td.item-md.orange:hover {box-shadow: inset 4px 0 0 #ff9800 !important;}
-td.item-md.purple:hover {box-shadow: inset 4px 0 0 #9c27b0 !important;}
-td.item-md.red:hover {box-shadow: inset 4px 0 0 #F44336 !important;}
-td.item-md.teal:hover {box-shadow: inset 4px 0 0 #009688 !important;}
-td.item-md.yellow:hover {box-shadow: inset 4px 0 0 #ffeb3b !important;}
-td.item-md.light-blue:hover {box-shadow: inset 4px 0 0 #03a9f4 !important;}
-td.item-md.green:hover {box-shadow: inset 4px 0 0 #4CAF50 !important;}
-td.item-md.light-green:hover {box-shadow: inset 4px 0 0 #8bc34a !important;}
-td.item-md.brown:hover {box-shadow: inset 4px 0 0 #795548 !important;}
+td.item-md.black:hover {box-shadow: inset 6px 0 0 #000 !important;}
+td.item-md.white:hover {box-shadow: inset 6px 0 0 #fff !important;}
+td.item-md.blue:hover {box-shadow: inset 6px 0 0 #2196F3 !important;}
+td.item-md.dark-purple:hover {box-shadow: inset 6px 0 0 #673ab7 !important;}
+td.item-md.grey:hover {box-shadow: inset 6px 0 0 #616161 !important;}
+td.item-md.indigo:hover {box-shadow: inset 6px 0 0 #1a237e !important;}
+td.item-md.orange:hover {box-shadow: inset 6px 0 0 #ff9800 !important;}
+td.item-md.purple:hover {box-shadow: inset 6px 0 0 #9c27b0 !important;}
+td.item-md.red:hover {box-shadow: inset 6px 0 0 #F44336 !important;}
+td.item-md.teal:hover {box-shadow: inset 6px 0 0 #009688 !important;}
+td.item-md.yellow:hover {box-shadow: inset 6px 0 0 #ffeb3b !important;}
+td.item-md.light-blue:hover {box-shadow: inset 6px 0 0 #03a9f4 !important;}
+td.item-md.green:hover {box-shadow: inset 6px 0 0 #4CAF50 !important;}
+td.item-md.light-green:hover {box-shadow: inset 6px 0 0 #8bc34a !important;}
+td.item-md.brown:hover {box-shadow: inset 6px 0 0 #795548 !important;}
 
-td.item-sm.black:hover {box-shadow: inset 3px 0 0 #000 !important;}
-td.item-sm.white:hover {box-shadow: inset 3px 0 0 #fff !important;}
-td.item-sm.blue:hover {box-shadow: inset 3px 0 0 #2196F3 !important;}
-td.item-sm.dark-purple:hover {box-shadow: inset 3px 0 0 #673ab7 !important;}
-td.item-sm.grey:hover {box-shadow: inset 3px 0 0 #616161 !important;}
-td.item-sm.indigo:hover {box-shadow: inset 3px 0 0 #1a237e !important;}
-td.item-sm.orange:hover {box-shadow: inset 3px 0 0 #ff9800 !important;}
-td.item-sm.purple:hover {box-shadow: inset 3px 0 0 #9c27b0 !important;}
-td.item-sm.red:hover {box-shadow: inset 3px 0 0 #F44336 !important;}
-td.item-sm.teal:hover {box-shadow: inset 3px 0 0 #009688 !important;}
-td.item-sm.yellow:hover {box-shadow: inset 3px 0 0 #ffeb3b !important;}
-td.item-sm.light-blue:hover {box-shadow: inset 3px 0 0 #03a9f4 !important;}
-td.item-sm.green:hover {box-shadow: inset 3px 0 0 #4CAF50 !important;}
-td.item-sm.light-green:hover {box-shadow: inset 3px 0 0 #8bc34a !important;}
-td.item-sm.brown:hover {box-shadow: inset 3px 0 0 #795548 !important;}
+td.item-sm.black:hover {box-shadow: inset 5px 0 0 #000 !important;}
+td.item-sm.white:hover {box-shadow: inset 5px 0 0 #fff !important;}
+td.item-sm.blue:hover {box-shadow: inset 5px 0 0 #2196F3 !important;}
+td.item-sm.dark-purple:hover {box-shadow: inset 5px 0 0 #673ab7 !important;}
+td.item-sm.grey:hover {box-shadow: inset 5px 0 0 #616161 !important;}
+td.item-sm.indigo:hover {box-shadow: inset 5px 0 0 #1a237e !important;}
+td.item-sm.orange:hover {box-shadow: inset 5px 0 0 #ff9800 !important;}
+td.item-sm.purple:hover {box-shadow: inset 5px 0 0 #9c27b0 !important;}
+td.item-sm.red:hover {box-shadow: inset 5px 0 0 #F44336 !important;}
+td.item-sm.teal:hover {box-shadow: inset 5px 0 0 #009688 !important;}
+td.item-sm.yellow:hover {box-shadow: inset 5px 0 0 #ffeb3b !important;}
+td.item-sm.light-blue:hover {box-shadow: inset 5px 0 0 #03a9f4 !important;}
+td.item-sm.green:hover {box-shadow: inset 5px 0 0 #4CAF50 !important;}
+td.item-sm.light-green:hover {box-shadow: inset 5px 0 0 #8bc34a !important;}
+td.item-sm.brown:hover {box-shadow: inset 5px 0 0 #795548 !important;}
