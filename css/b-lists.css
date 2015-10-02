@@ -1,5 +1,5 @@
 /*
-	B-Lists v.1.1.0 (https://github.com/1nonlyxtian/b-lists)
+	B-Lists v1.1.0 (https://github.com/1nonlyxtian/b-lists)
 	Copyright 2015 Christian Dasalla
 	
 	This project is licensed under the 
@@ -46,21 +46,21 @@ section.b-lists p {font-size:20px; font-weight:300}
 }
 
 /* Colors */
-td.black {border-left: 2px solid #000 !important; transition: box-shadow 0.25s ease-in-out;}
-td.white {border-left: 2px solid #fff !important; transition: box-shadow 0.25s ease-in-out;}
-td.blue {border-left: 2px solid #2196F3 !important; transition: box-shadow 0.25s ease-in-out;}
-td.dark-purple {border-left: 2px solid #673ab7 !important; transition: box-shadow 0.25s ease-in-out;}
-td.grey {border-left: 2px solid #616161 !important; transition: box-shadow 0.25s ease-in-out;}
-td.indigo {border-left: 2px solid #1a237e !important; transition: box-shadow 0.25s ease-in-out;}
-td.orange {border-left: 2px solid #ff9800 !important; transition: box-shadow 0.25s ease-in-out;}
-td.purple {border-left: 2px solid #9c27b0 !important; transition: box-shadow 0.25s ease-in-out;}
-td.red {border-left: 2px solid #F44336 !important; transition: box-shadow 0.25s ease-in-out;}
-td.teal {border-left: 2px solid #009688 !important; transition: box-shadow 0.25s ease-in-out;}
-td.yellow {border-left: 2px solid #ffeb3b !important; transition: box-shadow 0.25s ease-in-out;}
-td.light-blue {border-left: 2px solid #03a9f4 !important; transition: box-shadow 0.25s ease-in-out;}
-td.green {border-left: 2px solid #4CAF50 !important; transition: box-shadow 0.25s ease-in-out;}
-td.light-green {border-left: 2px solid #8bc34a !important; transition: box-shadow 0.25s ease-in-out;}
-td.brown {border-left: 2px solid #795548 !important; transition: box-shadow 0.25s ease-in-out;}
+td.black {box-shadow: inset 2px 0 0 #000 !important; transition: box-shadow 0.25s ease-in-out;}
+td.white {box-shadow: inset 2px 0 0 #fff !important; transition: box-shadow 0.25s ease-in-out;}
+td.blue {box-shadow: inset 2px 0 0 #2196F3 !important; transition: box-shadow 0.25s ease-in-out;}
+td.dark-purple {box-shadow: inset 2px 0 0 #673ab7 !important; transition: box-shadow 0.25s ease-in-out;}
+td.grey {box-shadow: inset 2px 0 0 #616161 !important; transition: box-shadow 0.25s ease-in-out;}
+td.indigo {box-shadow: inset 2px 0 0 #1a237e !important; transition: box-shadow 0.25s ease-in-out;}
+td.orange {box-shadow: inset 2px 0 0 #ff9800 !important; transition: box-shadow 0.25s ease-in-out;}
+td.purple {box-shadow: inset 2px 0 0 #9c27b0 !important; transition: box-shadow 0.25s ease-in-out;}
+td.red {box-shadow: inset 2px 0 0 #F44336 !important; transition: box-shadow 0.25s ease-in-out;}
+td.teal {box-shadow: inset 2px 0 0 #009688 !important; transition: box-shadow 0.25s ease-in-out;}
+td.yellow {box-shadow: inset 2px 0 0 #ffeb3b !important; transition: box-shadow 0.25s ease-in-out;}
+td.light-blue {box-shadow: inset 2px 0 0 #03a9f4 !important; transition: box-shadow 0.25s ease-in-out;}
+td.green {box-shadow: inset 2px 0 0 #4CAF50 !important; transition: box-shadow 0.25s ease-in-out;}
+td.light-green {box-shadow: inset 2px 0 0 #8bc34a !important; transition: box-shadow 0.25s ease-in-out;}
+td.brown {box-shadow: inset 2px 0 0 #795548 !important; transition: box-shadow 0.25s ease-in-out;}
 
 /* Color Hover Effects */
 td.item-lg.black:hover {box-shadow: inset 5px 0 0 #000 !important;}
