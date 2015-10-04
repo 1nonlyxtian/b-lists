@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.1.2
+
+- changed the `padding-right` in all list items from 200px to 250px
+- changed the width of the left border in all list items from 2px to 2.5px
+- removed the `transition-timing-function` in box-shadow because `ease` is the default option
+
 ## v1.1.1
 
 - added support for older Mozilla Firefox and Google Chrome versions for the `transition` property
