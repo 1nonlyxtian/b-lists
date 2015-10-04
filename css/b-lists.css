@@ -1,5 +1,5 @@
 /*
-	B-Lists v1.1.1 (https://github.com/1nonlyxtian/b-lists)
+	B-Lists v1.1.2 (https://github.com/1nonlyxtian/b-lists)
 	Copyright 2015 Christian Dasalla
 	
 	This project is licensed under the 
@@ -26,11 +26,11 @@ section.b-lists > p {font-size: 14px !important; font-weight: 300 !important;}
 }
 
 /* List Item Sizes */
-.item-lg {padding: 12px 200px 12px 25px !important;}
+.item-lg {padding: 12px 250px 12px 25px !important;}
 .item-lg p {font-size: 24px !important;}
-.item-md {padding: 8px 200px 8px 20px !important;}
+.item-md {padding: 8px 250px 8px 20px !important;}
 .item-md p {font-size: 20px !important;}
-.item-sm {padding: 4px 200px 4px 15px !important;}
+.item-sm {padding: 4px 250px 4px 15px !important;}
 .item-sm p {font-size: 16px !important;}
 
 /* Basic Column Grid */
@@ -53,21 +53,21 @@ section.b-lists > p {font-size: 14px !important; font-weight: 300 !important;}
 }
 
 /* Colors */
-td.black {box-shadow: inset 2px 0 0  #000 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.white {box-shadow: inset 2px 0 0  #fff !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.blue {box-shadow: inset 2px 0 0  #2196F3 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.dark-purple {box-shadow: inset 2px 0 0  #673ab7 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.grey {box-shadow: inset 2px 0 0  #616161 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.indigo {box-shadow: inset 2px 0 0  #1a237e !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.orange {box-shadow: inset 2px 0 0  #ff9800 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.purple {box-shadow: inset 2px 0 0  #9c27b0 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.red {box-shadow: inset 2px 0 0  #F44336 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.teal {box-shadow: inset 2px 0 0  #009688 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.yellow {box-shadow: inset 2px 0 0  #ffeb3b !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.light-blue {box-shadow: inset 2px 0 0  #03a9f4 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.green {box-shadow: inset 2px 0 0  #4CAF50 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.light-green {box-shadow: inset 2px 0 0  #8bc34a !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
-td.brown {box-shadow: inset 2px 0 0  #795548 !important; transition: box-shadow 0.2s ease !important; -webkit-transition: box-shadow 0.2s ease !important; -moz-transition: box-shadow 0.2s ease !important;}
+td.black {box-shadow: inset 2.5px 0 0  #000 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.white {box-shadow: inset 2.5px 0 0  #fff !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.blue {box-shadow: inset 2.5px 0 0  #2196F3 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.dark-purple {box-shadow: inset 2.5px 0 0  #673ab7 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.grey {box-shadow: inset 2.5px 0 0  #616161 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.indigo {box-shadow: inset 2.5px 0 0  #1a237e !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.orange {box-shadow: inset 2.5px 0 0  #ff9800 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.purple {box-shadow: inset 2.5px 0 0  #9c27b0 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.red {box-shadow: inset 2.5px 0 0  #F44336 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.teal {box-shadow: inset 2.5px 0 0  #009688 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.yellow {box-shadow: inset 2.5px 0 0  #ffeb3b !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.light-blue {box-shadow: inset 2.5px 0 0  #03a9f4 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.green {box-shadow: inset 2.5px 0 0  #4CAF50 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.light-green {box-shadow: inset 2.5px 0 0  #8bc34a !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
+td.brown {box-shadow: inset 2.5px 0 0  #795548 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
 
 /* Color Hover Effects */
 td.item-lg.black:hover {box-shadow: inset 7px 0 0 #000 !important;}
