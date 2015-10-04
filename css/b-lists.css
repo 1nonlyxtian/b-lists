@@ -1,5 +1,5 @@
 /*
-	B-Lists v1.1.2 (https://github.com/1nonlyxtian/b-lists)
+	B-Lists v1.1.3 (https://github.com/1nonlyxtian/b-lists)
 	Copyright 2015 Christian Dasalla
 	
 	This project is licensed under the 
@@ -51,6 +51,11 @@ section.b-lists > p {font-size: 14px !important; font-weight: 300 !important;}
 	.third {width: 33.33% !important;}
 	.half {width: 50% !important;}
 }
+
+/* Links */
+section.b-lists a {font-size:inherit !important; text-decoration: none !important; color:#2196F3 !important; opacity:0.7 !important; transition: opacity 0.25s !important;}
+section.b-lists a:visited {color:#9c27b0 !important;}
+section.b-lists a:hover {opacity:1 !important;}
 
 /* Colors */
 td.black {box-shadow: inset 2.5px 0 0  #000 !important; transition: box-shadow 0.2s !important; -webkit-transition: box-shadow 0.2s !important; -moz-transition: box-shadow 0.2s !important;}
@@ -117,3 +122,20 @@ td.item-sm.light-blue:hover {box-shadow: inset 5px 0 0 #03a9f4 !important;}
 td.item-sm.green:hover {box-shadow: inset 5px 0 0 #4CAF50 !important;}
 td.item-sm.light-green:hover {box-shadow: inset 5px 0 0 #8bc34a !important;}
 td.item-sm.brown:hover {box-shadow: inset 5px 0 0 #795548 !important;}
+
+/* Text Colors */
+.text-black {color: #000 !important;}
+.text-white {color: #fff !important;}
+.text-blue {color: #2196F3 !important;}
+.text-dark-purple {color: #673ab7 !important;}
+.text-grey {color: #616161 !important;}
+.text-indigo {color: #1a237e !important;}
+.text-orange {color: #ff9800 !important;}
+.text-purple {color: #9c27b0 !important;}
+.text-red {color: #F44336 !important;}
+.text-teal {color: #009688 !important;}
+.text-yellow {color: #ffeb3b !important;}
+.text-light-blue {color: #03a9f4 !important;}
+.text-green {color: #4CAF50 !important;}
+.text-light-green {color: #8bc34a !important;}
+.text-brown {color: #795548 !important;}
