@@ -1,409 +1,221 @@
 /*
-	B-Lists v1.1.4 (https://github.com/1nonlyxtian/b-lists)
+	B-Lists v1.2.0 (https://github.com/1nonlyxtian/b-lists)
 	Copyright 2015 Christian Dasalla
 	
 	This project is licensed under the 
 	MIT License (https://github.com/1nonlyxtian/b-lists/blob/master/LICENSE).
-*/
+ */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-section.b-lists {
-  padding: 12px !important;
-  font-family: 'Roboto';
+ul.b-lists {
+	list-style: none !important; 
+	font-family: 'Roboto' !important; 
+	padding: 5px 12px 12px !important;
+	border-bottom: 1px solid #eee !important;
 }
-section.b-lists > h1 {
-  font-size: 36px !important;
-  line-height: 0.7 !important;
+@media only screen and (min-width:600px) {
+	ul.b-lists + ul.b-lists {
+		border-top: 1px solid #eee !important;
+	}	
 }
-section.b-lists > h2 {
-  font-size: 30px !important;
-  line-height: 0.7 !important;
+ul.b-lists.lg li {
+	padding: 24px 15px !important; 
+	margin-bottom: 3px !important;
+	font-size: 20px !important;
 }
-section.b-lists > h3 {
-  font-size: 24px !important;
-  line-height: 0.7 !important;
+ul.b-lists.md li {
+	padding: 16px 15px !important; 
+	margin-bottom: 3px !important;
+	font-size: 18px !important;
 }
-section.b-lists > h4 {
-  font-size: 20px !important;
-  line-height: 0.7 !important;
+ul.b-lists.sm li {
+	padding: 8px 15px !important; 
+	margin-bottom: 3px !important;
+	font-size: 16px !important;
 }
-section.b-lists > h5 {
-  font-size: 18px !important;
-  line-height: 0.7 !important;
+li.black, li.white, li.blue, li.dark-purple, li.grey, li.indigo, li.orange, li.purple, li.red, li.teal, li.yellow, li.light-blue, li.green, li.light-green, li.brown {
+	transition: box-shadow 0.2s !important; 
+	-webkit-transition: box-shadow 0.2s !important; 
+	-moz-transition: box-shadow 0.2s !important;
 }
-section.b-lists > h6 {
-  font-size: 16px !important;
-  line-height: 0.7 !important;
+li.black {
+	box-shadow: inset 2.5px 0 0  #000 !important; 
 }
-section.b-lists > p {
-  font-size: 14px !important;
+li.white {
+	box-shadow: inset 2.5px 0 0  #fff !important; 
 }
-section.b-lists > a {
-  color: black !important;
+li.blue {
+	box-shadow: inset 2.5px 0 0  #2196F3 !important; 
 }
-section.b-lists:hover a {
-  font-size: inherit !important;
-  text-decoration: none !important;
-  color: #2196F3 !important;
-  opacity: 0.7 !important;
-  transition: opacity 0.25s !important;
+li.dark-purple {
+	box-shadow: inset 2.5px 0 0  #673ab7 !important; 
 }
-section.b-lists:hover a:visited {
-  color: #9c27b0 !important;
+li.grey {
+	box-shadow: inset 2.5px 0 0  #616161 !important; 
 }
-section.b-lists:hover a:hover {
-  opacity: 1.0 !important;
+li.indigo {
+	box-shadow: inset 2.5px 0 0  #1a237e !important; 
 }
-section.b-lists > td .item-lg .black:hover {
-  box-shadow: inset 7px 0 0 #000 !important;
+li.orange {
+	box-shadow: inset 2.5px 0 0  #ff9800 !important; 
 }
-section.b-lists > td .item-lg .white:hover {
-  box-shadow: inset 7px 0 0 #fff !important;
+li.purple {
+	box-shadow: inset 2.5px 0 0  #9c27b0 !important; 
 }
-section.b-lists > td .item-lg .blue:hover {
-  box-shadow: inset 7px 0 0 #2196F3 !important;
+li.red {
+	box-shadow: inset 2.5px 0 0  #F44336 !important; 
 }
-section.b-lists > td .item-lg .dark-purple:hover {
-  box-shadow: inset 7px 0 0 #673ab7 !important;
+li.teal {
+	box-shadow: inset 2.5px 0 0  #009688 !important;
 }
-section.b-lists > td .item-lg .grey:hover {
-  box-shadow: inset 7px 0 0 #616161 !important;
+li.yellow {
+	box-shadow: inset 2.5px 0 0  #ffeb3b !important; 
 }
-section.b-lists > td .item-lg .indigo:hover {
-  box-shadow: inset 7px 0 0 #1a237e !important;
+li.light-blue {
+	box-shadow: inset 2.5px 0 0  #03a9f4 !important; 
 }
-section.b-lists > td .item-lg .orange:hover {
-  box-shadow: inset 7px 0 0 #ff9800 !important;
+li.green {
+	box-shadow: inset 2.5px 0 0  #4CAF50 !important; 
 }
-section.b-lists > td .item-lg .purple:hover {
-  box-shadow: inset 7px 0 0 #9c27b0 !important;
+li.light-green {
+	box-shadow: inset 2.5px 0 0  #8bc34a !important; 
 }
-section.b-lists > td .item-lg .red:hover {
-  box-shadow: inset 7px 0 0 #F44336 !important;
+li.brown {
+	box-shadow: inset 2.5px 0 0  #795548 !important;
 }
-section.b-lists > td .item-lg .teal:hover {
-  box-shadow: inset 7px 0 0 #009688 !important;
+.b-lists.lg li.black:hover {
+	box-shadow: inset 7px 0 0 #000 !important;
 }
-section.b-lists > td .item-lg .yellow:hover {
-  box-shadow: inset 7px 0 0 #ffeb3b !important;
+.b-lists.lg li.white:hover {
+	box-shadow: inset 7px 0 0 #fff !important;
 }
-section.b-lists > td .item-lg .light-blue:hover {
-  box-shadow: inset 7px 0 0 #03a9f4 !important;
+.b-lists.lg li.blue:hover {
+	box-shadow: inset 7px 0 0 #2196F3 !important;
 }
-section.b-lists > td .item-lg .green:hover {
-  box-shadow: inset 7px 0 0 #4CAF50 !important;
+.b-lists.lg li.dark-purple:hover {
+	box-shadow: inset 7px 0 0 #673ab7 !important;
 }
-section.b-lists > td .item-lg .light-green:hover {
-  box-shadow: inset 7px 0 0 #8bc34a !important;
+.b-lists.lg li.grey:hover {
+	box-shadow: inset 7px 0 0 #616161 !important;
 }
-section.b-lists > td .item-lg .brown:hover {
-  box-shadow: inset 7px 0 0 #795548 !important;
+.b-lists.lg li.indigo:hover {
+	box-shadow: inset 7px 0 0 #1a237e !important;
 }
-section.b-lists > td .item-md .black:hover {
-  box-shadow: inset 6px 0 0 #000 !important;
+.b-lists.lg li.orange:hover {
+	box-shadow: inset 7px 0 0 #ff9800 !important;
 }
-section.b-lists > td .item-md .white:hover {
-  box-shadow: inset 6px 0 0 #fff !important;
+.b-lists.lg li.purple:hover {
+	box-shadow: inset 7px 0 0 #9c27b0 !important;
 }
-section.b-lists > td .item-md .blue:hover {
-  box-shadow: inset 6px 0 0 #2196F3 !important;
+.b-lists.lg li.red:hover {
+	box-shadow: inset 7px 0 0 #F44336 !important;
 }
-section.b-lists > td .item-md .dark-purple:hover {
-  box-shadow: inset 6px 0 0 #673ab7 !important;
+.b-lists.lg li.teal:hover {
+	box-shadow: inset 7px 0 0 #009688 !important;
 }
-section.b-lists > td .item-md .grey:hover {
-  box-shadow: inset 6px 0 0 #616161 !important;
+.b-lists.lg li.yellow:hover {
+	box-shadow: inset 7px 0 0 #ffeb3b !important;
 }
-section.b-lists > td .item-md .indigo:hover {
-  box-shadow: inset 6px 0 0 #1a237e !important;
+.b-lists.lg li.light-blue:hover {
+	box-shadow: inset 7px 0 0 #03a9f4 !important;
 }
-section.b-lists > td .item-md .orange:hover {
-  box-shadow: inset 6px 0 0 #ff9800 !important;
+.b-lists.lg li.green:hover {
+	box-shadow: inset 7px 0 0 #4CAF50 !important;
 }
-section.b-lists > td .item-md .purple:hover {
-  box-shadow: inset 6px 0 0 #9c27b0 !important;
+.b-lists.lg li.light-green:hover {
+	box-shadow: inset 7px 0 0 #8bc34a !important;
 }
-section.b-lists > td .item-md .red:hover {
-  box-shadow: inset 6px 0 0 #F44336 !important;
+.b-lists.lg li.brown:hover {
+	box-shadow: inset 7px 0 0 #795548 !important;
 }
-section.b-lists > td .item-md .teal:hover {
-  box-shadow: inset 6px 0 0 #009688 !important;
+.b-lists.md li.black:hover {
+	box-shadow: inset 6px 0 0 #000 !important;
 }
-section.b-lists > td .item-md .yellow:hover {
-  box-shadow: inset 6px 0 0 #ffeb3b !important;
+.b-lists.md li.white:hover {
+	box-shadow: inset 6px 0 0 #fff !important;
 }
-section.b-lists > td .item-md .light-blue:hover {
-  box-shadow: inset 6px 0 0 #03a9f4 !important;
+.b-lists.md li.blue:hover {
+	box-shadow: inset 6px 0 0 #2196F3 !important;
 }
-section.b-lists > td .item-md .green:hover {
-  box-shadow: inset 6px 0 0 #4CAF50 !important;
+.b-lists.md li.dark-purple:hover {
+	box-shadow: inset 6px 0 0 #673ab7 !important;
 }
-section.b-lists > td .item-md .light-green:hover {
-  box-shadow: inset 6px 0 0 #8bc34a !important;
+.b-lists.md li.grey:hover {
+	box-shadow: inset 6px 0 0 #616161 !important;
 }
-section.b-lists > td .item-md .brown:hover {
-  box-shadow: inset 6px 0 0 #795548 !important;
+.b-lists.md li.indigo:hover {
+	box-shadow: inset 6px 0 0 #1a237e !important;
 }
-section.b-lists > td .item-sm .black:hover {
-  box-shadow: inset 5px 0 0 #000 !important;
+.b-lists.md li.orange:hover {
+	box-shadow: inset 6px 0 0 #ff9800 !important;
 }
-section.b-lists > td .item-sm .white:hover {
-  box-shadow: inset 5px 0 0 #fff !important;
+.b-lists.md li.purple:hover {
+	box-shadow: inset 6px 0 0 #9c27b0 !important;
 }
-section.b-lists > td .item-sm .blue:hover {
-  box-shadow: inset 5px 0 0 #2196F3 !important;
+.b-lists.md li.red:hover {
+	box-shadow: inset 6px 0 0 #F44336 !important;
 }
-section.b-lists > td .item-sm .dark-purple:hover {
-  box-shadow: inset 5px 0 0 #673ab7 !important;
+.b-lists.md li.teal:hover {
+	box-shadow: inset 6px 0 0 #009688 !important;
 }
-section.b-lists > td .item-sm .grey:hover {
-  box-shadow: inset 5px 0 0 #616161 !important;
+.b-lists.md li.yellow:hover {
+	box-shadow: inset 6px 0 0 #ffeb3b !important;
 }
-section.b-lists > td .item-sm .indigo:hover {
-  box-shadow: inset 5px 0 0 #1a237e !important;
+.b-lists.md li.light-blue:hover {
+	box-shadow: inset 6px 0 0 #03a9f4 !important;
 }
-section.b-lists > td .item-sm .orange:hover {
-  box-shadow: inset 5px 0 0 #ff9800 !important;
+.b-lists.md li.green:hover {
+	box-shadow: inset 6px 0 0 #4CAF50 !important;
 }
-section.b-lists > td .item-sm .purple:hover {
-  box-shadow: inset 5px 0 0 #9c27b0 !important;
+.b-lists.md li.light-green:hover {
+	box-shadow: inset 6px 0 0 #8bc34a !important;
 }
-section.b-lists > td .item-sm .red:hover {
-  box-shadow: inset 5px 0 0 #F44336 !important;
+.b-lists.md li.brown:hover {
+	box-shadow: inset 6px 0 0 #795548 !important;
 }
-section.b-lists > td .item-sm .teal:hover {
-  box-shadow: inset 5px 0 0 #009688 !important;
+.b-lists.sm li.black:hover {
+	box-shadow: inset 5px 0 0 #000 !important;
 }
-section.b-lists > td .item-sm .yellow:hover {
-  box-shadow: inset 5px 0 0 #ffeb3b !important;
-}
-section.b-lists > td .item-sm .light-blue:hover {
-  box-shadow: inset 5px 0 0 #03a9f4 !important;
+.b-lists.sm li.white:hover {
+	box-shadow: inset 5px 0 0 #fff !important;
 }
-section.b-lists > td .item-sm .green:hover {
-  box-shadow: inset 5px 0 0 #4CAF50 !important;
-}
-section.b-lists > td .item-sm .light-green:hover {
-  box-shadow: inset 5px 0 0 #8bc34a !important;
-}
-section.b-lists > td .item-sm .brown:hover {
-  box-shadow: inset 5px 0 0 #795548 !important;
-}
-section.b-lists > td .black {
-  box-shadow: inset 2.5px 0 0 #000 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
+.b-lists.sm li.blue:hover {
+	box-shadow: inset 5px 0 0 #2196F3 !important;
 }
-section.b-lists > td .white {
-  box-shadow: inset 2.5px 0 0 #fff !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
+.b-lists.sm li.dark-purple:hover {
+	box-shadow: inset 5px 0 0 #673ab7 !important;
 }
-section.b-lists > td .blue {
-  box-shadow: inset 2.5px 0 0 #2196F3 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .dark-purple {
-  box-shadow: inset 2.5px 0 0 #673ab7 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .grey {
-  box-shadow: inset 2.5px 0 0 #616161 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .indigo {
-  box-shadow: inset 2.5px 0 0 #1a237e !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .orange {
-  box-shadow: inset 2.5px 0 0 #ff9800 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .purple {
-  box-shadow: inset 2.5px 0 0 #9c27b0 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .red {
-  box-shadow: inset 2.5px 0 0 #F44336 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .teal {
-  box-shadow: inset 2.5px 0 0 #009688 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .yellow {
-  box-shadow: inset 2.5px 0 0 #ffeb3b !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .light-blue {
-  box-shadow: inset 2.5px 0 0 #03a9f4 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .green {
-  box-shadow: inset 2.5px 0 0 #4CAF50 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .light-green {
-  box-shadow: inset 2.5px 0 0 #8bc34a !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-section.b-lists > td .brown {
-  box-shadow: inset 2.5px 0 0 #795548 !important;
-  transition: box-shadow 0.2s !important;
-  -webkit-transition: box-shadow 0.2s !important;
-  -moz-transition: box-shadow 0.2s !important;
-}
-
-.item-lg {
-  padding: 12px 250px 12px 25px !important;
-}
-.item-lg p {
-  font-size: 24px !important;
-}
-
-.item-md {
-  padding: 8px 250px 8px 20px !important;
-}
-.item-md p {
-  font-size: 20px !important;
-}
-
-.item-sm {
-  padding: 4px 250px 4px 15px !important;
-}
-.item-sm p {
-  font-size: 16px !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .row {
-    padding: 1px 5px !important;
-  }
-
-  .fifth, .quarter, .third, .half {
-    width: 100%;
-  }
-
-  .fifth, .quarter, .third, .half {
-    float: left;
-    -webkit-box-sizing: border-box !important;
-    -moz-box-sizing: border-box !important;
-    box-sizing: border-box !important;
-    width: 100% !important;
-  }
-
-  section.b-lists {
-    border-bottom: 1px solid #eee !important;
-  }
-}
-@media only screen and (min-width: 601px) {
-  .row {
-    padding: 1px 16px !important;
-  }
-
-  .fifth {
-    width: 20% !important;
-  }
-
-  .quarter {
-    width: 25% !important;
-  }
-
-  .third {
-    width: 33.3333333333% !important;
-  }
-
-  .half {
-    width: 50% !important;
-  }
-
-  section.b-lists + section.b-lists {
-    border-top: 1px solid #eee !important !important;
-  }
-}
-.text-black {
-  color: #000 !important;
-}
-
-.text-white {
-  color: #fff !important;
-}
-
-.text-blue {
-  color: #2196F3 !important;
-}
-
-.text-dark-purple {
-  color: #673ab7 !important;
-}
-
-.text-grey {
-  color: #616161 !important;
-}
-
-.text-indigo {
-  color: #1a237e !important;
-}
-
-.text-orange {
-  color: #ff9800 !important;
-}
-
-.text-purple {
-  color: #9c27b0 !important;
-}
-
-.text-red {
-  color: #F44336 !important;
-}
-
-.text-teal {
-  color: #009688 !important;
-}
-
-.text-yellow {
-  color: #ffeb3b !important;
-}
-
-.text-light-blue {
-  color: #03a9f4 !important;
-}
-
-.text-green {
-  color: #4CAF50 !important;
-}
-
-.text-light-green {
-  color: #8bc34a !important;
-}
-
-.text-brown {
-  color: #795548 !important;
+.b-lists.sm li.grey:hover {
+	box-shadow: inset 5px 0 0 #616161 !important;
+}
+.b-lists.sm li.indigo:hover {
+	box-shadow: inset 5px 0 0 #1a237e !important;
+}
+.b-lists.sm li.orange:hover {
+	box-shadow: inset 5px 0 0 #ff9800 !important;
+}
+.b-lists.sm li.purple:hover {
+	box-shadow: inset 5px 0 0 #9c27b0 !important;
+}
+.b-lists.sm li.red:hover {
+	box-shadow: inset 5px 0 0 #F44336 !important;
+}
+.b-lists.sm li.teal:hover {
+	box-shadow: inset 5px 0 0 #009688 !important;
+}
+.b-lists.sm li.yellow:hover {
+	box-shadow: inset 5px 0 0 #ffeb3b !important;
+}
+.b-lists.sm li.light-blue:hover {
+	box-shadow: inset 5px 0 0 #03a9f4 !important;
+}
+.b-lists.sm li.green:hover {
+	box-shadow: inset 5px 0 0 #4CAF50 !important;
+}
+.b-lists.sm li.light-green:hover {
+	box-shadow: inset 5px 0 0 #8bc34a !important;
+}
+.b-lists.sm li.brown:hover {
+	box-shadow: inset 5px 0 0 #795548 !important;
 }
