@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.0
+- B-Lists can now be used with `<ul>` and `<li>`
+
+## v1.1.3
+- added a minified version of B-Lists (thanks Freeformatter for making me use their CSS minifier)
+- added a text-color class (also with 15 color schemes)
+- added effects for all links in section.b-lists
+
 ## v1.1.2
 
 - changed the `padding-right` in all list items from 200px to 250px
