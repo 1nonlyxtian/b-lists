@@ -39,7 +39,7 @@ Now, let's start *b-listing*!
 
 1. Create a `<ul>` with a class `b-lists` and either `sm`, `md`, or `lg` depending on the sizes. This will be the framework for your list.
 2. To do the list items, create an `<li>` with the class of your desired color scheme (ex `red`). The color you picked is the color of the left border of the list item.
-3. Repeat Step 2 until necessary.
+3. Repeat Step 1 & 2 until necessary.
 4. Close all tags. (Just a reminder :))
 
 There you have it. You now have a list that is more beautiful and more elegant. :)
