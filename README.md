@@ -44,7 +44,7 @@ Now, let's start *b-listing*!
 
 There you have it. You now have a list that is more beautiful and more elegant. :)
 
-NOTE: You can access a demo file of B-Lists [here](http://rawgit.com/1nonlyxtian/b-lists/master/test.html). If you have questions on the usage of B-Lists, you can email me at cfdasalla@outlook.com or message me on Twitter: [@1nOnlyXtian](http://twitter.com/1nonlyxtian).
+NOTE: You can access a demo file of B-Lists [here](http://rawgit.com/1nonlyxtian/b-lists/master/test.html). If you have questions on the usage of B-Lists, you can email me at 1nonlyxtian@gmail.com or message me on Twitter: [@1nOnlyXtian](http://twitter.com/1nonlyxtian).
 
 ## License
 
